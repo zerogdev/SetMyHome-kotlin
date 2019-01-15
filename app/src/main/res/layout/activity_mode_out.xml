@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위치 밖으로 나간 경우"/>
+
+        <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/outMode"
+        >
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/outModeRing"
+                         android:text="벨소리"/>
+
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/outModeVibration"
+                         android:text="진동"/>
+
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/outModeSilent"
+                         android:text="무음"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:text="저장"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"/>
+
+</RelativeLayout>
